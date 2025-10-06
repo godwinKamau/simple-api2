@@ -1,0 +1,11 @@
+body {
+    background: navy;
+    color: aliceblue;
+}
+
+.title {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

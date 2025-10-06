@@ -8,7 +8,51 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <fieldset>
+        <legend>Choose your genre</legend>
+        <div>
+            <input class="genre" id="Adventure" name= "Adventure" type="checkbox"><label for="Adventure">Adventure</label>
+        </div>
+        <div>
+            <input class="genre" id="Action" name="Action" type="checkbox"><label for="Action">Action</label>
+        </div>
+        <div>
+            <input class="genre" id="Romance" name="Romance" type="checkbox"><label for="Romance">Romance</label>
+        </div>
+        <div>
+            <input class="genre" id="Horror" name="Horror" type="checkbox"><label for="Horror">Horror</label>
+        </div>
+        <div>
+            <input class="genre" id="Comedy" name="Comedy" type="checkbox"><label for="Comedy">Comedy</label>
+        </div>
+    </fieldset>
+    <label for="avg">What's your lowest score threshold (out of 100)?</label>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="scoreAvg">
+        <span id="score"></span>
+    </div>
+    <button>Submit</button>
+    <section class="title 1">
+        <img>
+        <section class="words">
+            <h3></h3>
+            <p></p>
+        </section>
+    </section>
+    <section class="title 2">
+        <img>
+        <section class="words">
+            <h3></h3>
+            <p></p>
+        </section>
+    </section>
+    <section class="title 3">
+        <img>
+        <section class="words">
+            <h3></h3>
+            <p></p>
+        </section>
+    </section>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
