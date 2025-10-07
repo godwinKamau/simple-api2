@@ -5,52 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Recommendation Site</title>
     <meta name="description" content="Give me new anime">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nabla:EDPT@0..200&family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <fieldset>
-        <legend>Choose your genre</legend>
-        <div>
-            <input class="genre" id="Adventure" name= "Adventure" type="checkbox"><label for="Adventure">Adventure</label>
-        </div>
-        <div>
-            <input class="genre" id="Action" name="Action" type="checkbox"><label for="Action">Action</label>
-        </div>
-        <div>
-            <input class="genre" id="Romance" name="Romance" type="checkbox"><label for="Romance">Romance</label>
-        </div>
-        <div>
-            <input class="genre" id="Horror" name="Horror" type="checkbox"><label for="Horror">Horror</label>
-        </div>
-        <div>
-            <input class="genre" id="Comedy" name="Comedy" type="checkbox"><label for="Comedy">Comedy</label>
-        </div>
-    </fieldset>
-    <label for="avg">What's your lowest score threshold (out of 100)?</label>
-    <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="50" class="slider" id="scoreAvg">
-        <span id="score"></span>
-    </div>
-    <button>Submit</button>
-    <section class="title 1">
-        <img>
-        <section class="words">
-            <h3></h3>
-            <p></p>
-        </section>
+    <section class="intro">
+        <h1>Bangers, Only! (Anime Edition)</h1>
+        <h2 class="d">Ran out of anime to watch? Impossible! Here is a tool leveraging the AnList API to help you find some new anime.</h2>
     </section>
-    <section class="title 2">
-        <img>
-        <section class="words">
-            <h3></h3>
-            <p></p>
-        </section>
+    <section class="sliders">
+        <fieldset>
+            <legend>Choose your genre</legend>
+            <div>
+                <input class="genre" id="Adventure" name= "Adventure" type="checkbox"><label for="Adventure">Adventure</label>
+            </div>
+            <div>
+                <input class="genre" id="Action" name="Action" type="checkbox"><label for="Action">Action</label>
+            </div>
+            <div>
+                <input class="genre" id="Romance" name="Romance" type="checkbox"><label for="Romance">Romance</label>
+            </div>
+            <div>
+                <input class="genre" id="Horror" name="Horror" type="checkbox"><label for="Horror">Horror</label>
+            </div>
+            <div>
+                <input class="genre" id="Comedy" name="Comedy" type="checkbox"><label for="Comedy">Comedy</label>
+            </div>
+            <div>
+                <input class="genre" id="Drama" name="Drama" type="checkbox"><label for="Drama">Drama</label>
+            </div>
+            <div>
+                <input class="genre" id="Ecchi" name="Ecchi" type="checkbox"><label for="Ecchi">Ecchi</label>
+            </div>
+            <div>
+                <input class="genre" id="Fantasy" name="Fantasy" type="checkbox"><label for="Fantasy">Fantasy</label>
+            </div>
+            <div>
+                <input class="genre" id="Mahou Shoujo" name="Mahou Shoujo" type="checkbox"><label for="Mahou Shoujo">Mahou Shoujo</label>
+            </div>
+            <div>
+                <input class="genre" id="Mecha" name="Mecha" type="checkbox"><label for="Mecha">Mecha</label>
+            </div>
+            <div>
+                <input class="genre" id="Music" name="Music" type="checkbox"><label for="Music">Music</label>
+            </div>
+            <div>
+                <input class="genre" id="Mystery" name="Mystery" type="checkbox"><label for="Mystery">Mystery</label>
+            </div>
+            <div>
+                <input class="genre" id="Psychological" name="Psychological" type="checkbox"><label for="Psychological">Psychological</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>What's your lowest score threshold (out of 100)?</legend>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="scoreAvg">
+                <span id="score"></span>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>What Year Would You Like?</legend>
+            <input type="number" id="year" name="year" min="1900" max="2025" value="2025"> 
+        </fieldset>
+        <fieldset>
+            <legend>Press the Button!</legend>
+            <button>Submit</button>
+        </fieldset>
     </section>
-    <section class="title 3">
-        <img>
-        <section class="words">
+    <section class="list">
+        <section class="aniContainer">
+            <section class="aniTitle">
             <h3></h3>
-            <p></p>
+            </section>
+            <section class="picture">  
+                <section class="words">
+                    
+                    <p></p>
+                </section>
+            </section>
+        </section>
+        <section class="aniContainer">
+            <section class="aniTitle">
+            <h3></h3>
+            </section>
+            <section class="picture">  
+                <section class="words">
+                    
+                    <p></p>
+                </section>
+            </section>
+        </section>
+        <section class="aniContainer">
+            <section class="aniTitle">
+            <h3></h3>
+            </section>
+            <section class="picture">  
+                <section class="words">
+                    
+                    <p></p>
+                </section>
+            </section>
+        </section>
+        <section class="aniContainer">
+            <section class="aniTitle">
+            <h3></h3>
+            </section>
+            <section class="picture">  
+                <section class="words">
+                    
+                    <p></p>
+                </section>
+            </section>
+        </section>
+        <section class="aniContainer">
+            <section class="aniTitle">
+            <h3></h3>
+            </section>
+            <section class="picture">  
+                <section class="words">
+                    
+                    <p></p>
+                </section>
+            </section>
+        </section>
+        <section class="aniContainer">
+            <section class="aniTitle">
+            <h3></h3>
+            </section>
+            <section class="picture">  
+                <section class="words">
+                    
+                    <p></p>
+                </section>
+            </section>
+        </section>
+        <section class="aniContainer">
+            <section class="aniTitle">
+            <h3></h3>
+            </section>
+            <section class="picture">  
+                <section class="words">
+                    
+                    <p></p>
+                </section>
+            </section>
+        </section>
+        <section class="aniContainer">
+            <section class="aniTitle">
+            <h3></h3>
+            </section>
+            <section class="picture"
+                <section class="words">
+                    
+                    <p></p>
+                </section>
+            </section>
         </section>
     </section>
     <script type="text/javascript" src="js/main.js"></script>

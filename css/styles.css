@@ -1,11 +1,136 @@
-body {
-    background: navy;
-    color: aliceblue;
+:root{
+    --bg-color:#21295C;
+    --banner:#1B3B6F;
+    --lapis:#065A82;
+    --cerulean:#1C7293;
+    --popper:#9EB3C2;
 }
 
-.title {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    background-size: contain;
+body {
+    background: var(--bg-color);
+    color: aliceblue;
+    font-family: 'Poiret One',Arial, Helvetica, sans-serif;
+}
+
+.intro{
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(0, 0, 76);
+}
+
+h1 {
+    font-family: 'Nabla';
+    font-size: 2.8rem;
+    font-variant: small-caps;
+    
+}
+
+h2 {
+    font-size: .8rem;
+    font-style: italic;
+}
+
+.sliders {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:10px;
+    height:130px;
+    margin-bottom: 20px;
+}
+
+
+fieldset {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(var(--lapis)50%,navy);
+}
+
+.slider {
+    width: 400px;
+    align-self: stretch;
+}
+
+legend {
+    font-size: 1.8rem;
+}
+
+fieldset:first-of-type{
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width:25%;
+    gap:4px;
+}
+
+fieldset:nth-of-type(2) {
+    width:30%;
+}
+
+input[type='number']{
+    height:3rem;
+    width:40%;
+    text-align: center;
+    font-size:1.5rem;
+    background-color: var(--popper);
+}
+
+button{
+    padding:15px;
+    background-color: var(--cerulean);
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 560px;
+    gap:1%;
+    justify-content: space-evenly;
+}
+
+.aniContainer{
+    display:flex;
+    visibility: hidden;
+    flex-direction: column;
+    background-color: rgb(192, 192, 192);
+    padding:10px;
+    width: 23%;
+    min-height: 560px;
+    transition: ease-in-out 2s transform;
+    border:1px solid navy;
+}
+
+.aniContainer:hover{
+    transform: translateY(-2px);
+}
+
+.picture {
+    color: black;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    background-size: cover;
     background-repeat: no-repeat;
+    padding:10px 0px;
+}
+
+.words {
+    visibility: hidden;
+    background-color: rgba(255,255,255,.3);
+    height: 100%;
+    transition: all .5s ease-in;
+}
+
+.aniTitle {
+    background-color: var(--lapis);
+}
+
+.picture:hover > .words{
+    visibility: visible;
+    backdrop-filter: blur(10px);
 }
