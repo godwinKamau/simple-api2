@@ -1,22 +1,25 @@
-# 📊 Project: Simple API 2
+# Bangers, Only
 
-### Goal: Display data returned from an api
+_Making use of the anilist API to find new anime based off of how trashy I'm feeling in the moment_
 
-### How to submit your code for review:
+<hr>
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+<img src="./Screenshot 2025-11-13 at 2.19.12 PM.png">
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+<hr>
+
+## [Live Demo Here](https://godwinkamau.github.io/simple-api2/)
+
+<hr>
+
+## Tech Used
+
+HTML, CSS, JavaScript, AniList API
+
+<hr>
+
+## Lessons Learned
+
+- Using fetch requests to get data from a non-traditional API.
+- A few neat CSS techniques to make the page interactive.
+- Using the in-browser api-interface to build out a more complicated calling system.
