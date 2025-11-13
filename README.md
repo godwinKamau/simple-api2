@@ -2,6 +2,8 @@
 
 _Making use of the anilist API to find new anime based off of how trashy I'm feeling in the moment_
 
+Description: Users can input their preferences of genre, rating, and year to receive the top results from anilist in my slick css design.
+
 <hr>
 
 <img src="./Screenshot 2025-11-13 at 2.19.12 PM.png">
